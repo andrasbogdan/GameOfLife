@@ -1,0 +1,39 @@
+﻿<div class="modal fade" id="rules" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Rules</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Each cell has two possible states: alive or dead. The cells interact with theirs neighbours.
+                    At each step in time, the following transitions occur:
+                </p>
+                <ul>
+                    <li>Any live cell with fewer than two live neighbours dies</li>
+                    <li>Any live cell with more than three live neighbours dies</li>
+                    <li>Any live cell with two or three live neighbours lives on to the next generation</li>
+                    <li>Any dead cell with exactly three live neighbours becomes a live cell</li>
+                </ul>
+                <p>Steps are updated every 2 seconds</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="error" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Wrong cell</h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

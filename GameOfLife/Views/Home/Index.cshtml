@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/gameboard.css" rel="stylesheet" />
+<div class="row">
+    <p>SignalR implementation of John Conway's Game of life. Read <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#rules">rules</button></p>
+</div>
+
+@Html.Partial("_Modals")
+
+<div class="row" id="board">
+    <div class="col-md-12">
+        <table id="gameBoard" border="1">
+            <tbody>
+                <tr class="loading"><td>Loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
